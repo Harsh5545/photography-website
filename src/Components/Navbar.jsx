@@ -5,7 +5,7 @@ import './Navbar.css';
 import logoImage from '../images/logo4.png';
 
 function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {

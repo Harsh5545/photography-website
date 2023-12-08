@@ -3,34 +3,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;    
+    /* height: 100vh;     */
     background-position: center;
     background-attachment: fixed;
   }
-  .section2::before{
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.527);
-    left: 0;
-    width: 100%;
-    height: 100%;
 
-  }
   
   .content {
     position: relative;
-    padding: 6rem;
+    padding: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    box-sizing: border-box; /* Include padding and borders in the width calculation */
+    box-sizing: border-box; 
+    background-color: rgba(0, 0, 0, 0.527);/* Include padding and borders in the width calculation */
   }
   
-  
+
   .services {
     max-width: 25%;
-    gap: 1.2rem;
     color: var(--secondary);
     box-sizing: border-box; /* Include padding and borders in the width calculation */
   }

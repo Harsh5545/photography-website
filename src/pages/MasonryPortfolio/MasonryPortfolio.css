@@ -1,0 +1,52 @@
+/* MasonryPortfolio.css */
+
+.masonry-grid {
+    display: flex;
+    margin-left: -16px; /* Adjust the margin to align with your design */
+    width: auto;
+  }
+  
+  .masonry-grid-column {
+    padding-left: 16px; /* Adjust the padding to align with your design */
+    background-clip: padding-box;
+  }
+  
+  .masonry-grid-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px; /* Adjust the margin between items */
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .masonry-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .masonry-grid-item:hover img {
+    transform: scale(1.02);
+   
+     /* Adjust the scale factor as needed */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: -100%; /* Move text below the image container */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust background color as needed */
+    color: #fff; /* Adjust text color */
+    padding: 10px;
+    text-align: center; /* Center align text */
+    font-size: 1.5rem; /* Adjust text size */
+    font-weight: 800; /* Adjust font weight */
+    transition: bottom 0.3s ease-in-out; /* Add transition for smooth appearance */
+  }
+  
+  .masonry-grid-item:hover .text-overlay {
+    bottom: 0; /* Show text on hover by bringing it back to its original position */
+  }
+  
