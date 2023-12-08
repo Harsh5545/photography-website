@@ -1,0 +1,89 @@
+/* Navbar.css */
+.navbar {
+  background: none; /* Remove background color */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  color: var(--secondary);
+}
+
+.navItem {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+.navItem a {
+    
+    
+  text-decoration: none;
+  /* margin-left: 2rem; */
+  padding: 0.5em 0.5em;
+  position: relative;
+transition: .5s ease;
+
+}
+.navItem a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2.5px;
+  width: 0;
+  background-color: #DC4E39;
+  transition: .5s ease;
+}
+.navItem a:hover::before{
+  width:100%;
+}
+/* Navbar.css */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.628); /* White background with 90% opacity */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* White shadow with 30% opacity */
+  transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+
+@media (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .navItem {
+    margin-top: 1rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    backface-visibility: inherit;
+  }
+
+  .button {
+    margin-top: 1rem;
+    width: 50%;
+  }
+}
+
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
