@@ -1,5 +1,5 @@
 .section {
-    background-image: url('../../../images/DSC_2962.jpg');  
+    background-image: url('../../../images/IMG4.jpg');  
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -8,7 +8,13 @@
   }
   .container{
     /* width: 3/4; */
-    margin: 3rem;
+    padding: 3rem;
+    position: relative;
+    /* padding: 8rem; */
+    /* gap: 1rem; */
+    box-sizing: border-box; 
+    background-color: rgba(0, 0, 0, 0.527);/* Include padding and borders in the width calculation */
+  
   }
 
   .box{
@@ -43,9 +49,10 @@
   flex-direction: column;
   margin: 2rem;
 }
-.slick-slide:nth-child(1){
+.home-review-slider .slick-slide>div {
   margin: 0 10px;
 }
+
 .reviewData h2{
   font-size: 1.5rem;
 }
