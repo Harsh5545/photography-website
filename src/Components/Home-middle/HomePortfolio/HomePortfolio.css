@@ -3,3 +3,9 @@
     margin: 5rem;
 }
 /*  */
+@media (max-width: 640px){
+    .portfolio{
+
+        margin: 2rem;
+    }
+}

@@ -1,18 +1,20 @@
 .home {
   position: relative;
+  overflow: hidden;
 }
 
 .slide {
- height: 100vh;
+ /* height: 100vh; */
   width: 100%;
   background-size: cover;
   background-position: center;
   text-align: center;
   position: relative;
   overflow: hidden;
-  margin: 0; /* Remove margin */
 }
-
+/* .slick-slide>div{
+  margin: 0 0px;
+} */
 .slide::before {
   content: '';
   position: absolute;
@@ -26,9 +28,10 @@
 
 .slide1 {
   background-image: url('../../images/DSC_1513.jpg');
+  background-size: cover;
 }
 .slide img {
-  max-height: auto; /* Adjust to fill the entire height of the container */
+  max-height: auto; 
   object-fit: cover;
   width: 100%;
   display: block;
@@ -112,7 +115,7 @@
     background-repeat: no-repeat;
   }
   .slide img {
-  aspect-ratio: 3/4;
+  /* aspect-ratio: 3/4; */
     height: 100%;
     object-fit: contain;
     width: 100%;

@@ -1,7 +1,6 @@
   import React from 'react';
   import './HomePortfolio.css';
   import MasonryPortfolio from '../../../pages/MasonryPortfolio/MasonryPortfolio';
-  import { Link } from 'react-router-dom';
 
   function HomePortfolio() {
     const homePhotos = [

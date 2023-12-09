@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./HomeMiddle.css";
 import aboutimg from "../../images/IMG2.jpg";
+
 
 function HomeMiddle() {
   return (

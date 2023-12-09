@@ -24,7 +24,7 @@ const Hero = () => {
     <div className="home">
       {/* <Navbar /> */}
       <Carousel
-        autoplay
+        
         effect="fade"
         beforeChange={(_, to) => setCurrentSlide(to)}
         dotPosition="bottom"

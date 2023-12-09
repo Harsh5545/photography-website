@@ -2,7 +2,7 @@
 
 .masonry-grid {
     display: flex;
-    margin-left: -16px; /* Adjust the margin to align with your design */
+    margin-left: -16px; 
     width: auto;
   }
   
@@ -11,6 +11,16 @@
     background-clip: padding-box;
   }
   
+
+.masonry-grid-item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
   .masonry-grid-item {
     position: relative;
     width: 100%;
@@ -24,12 +34,11 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    transition: 5s;
   }
   
   .masonry-grid-item:hover img {
-    transform: scale(1.02);
-   
-     /* Adjust the scale factor as needed */
+    transform: scale(1.04);
   }
   
   .text-overlay {
@@ -43,10 +52,24 @@
     text-align: center; /* Center align text */
     font-size: 1.5rem; /* Adjust text size */
     font-weight: 800; /* Adjust font weight */
-    transition: bottom 0.3s ease-in-out; /* Add transition for smooth appearance */
+    transition: bottom 1s ease-in-out; /* Add transition for smooth appearance */
   }
   
   .masonry-grid-item:hover .text-overlay {
     bottom: 0; /* Show text on hover by bringing it back to its original position */
   }
   
+  @media (max-width: 680px){
+    .text-overlay{
+      position: relative;
+      font-size: 0.6rem; 
+      font-weight: 600; 
+      background: none;
+      color: black;
+    }
+.masonry-grid-item img {
+      
+      border-radius: 10px;
+      
+  }
+}

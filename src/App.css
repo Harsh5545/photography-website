@@ -20,6 +20,10 @@
   background: var(--orange-gradient);
   border-radius: 5px;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
 * {
   margin: 0;
