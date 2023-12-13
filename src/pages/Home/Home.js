@@ -7,6 +7,7 @@ import HomePortfolio from "../../Components/Home-middle/HomePortfolio/HomePortfo
 import HomeReview from "../../Components/Home-middle/HomeReview/HomeReview";
 import HomeCustomer from "../../Components/Home-middle/HomeCustomer/HomeCustomer";
 import HomePhotographer from "../../Components/Home-middle/HomePhotographer/HomePhotographer";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <HomeReview />
       <HomeCustomer />
       <HomePhotographer/>
+      <Footer/>
     </div>
   );
 }

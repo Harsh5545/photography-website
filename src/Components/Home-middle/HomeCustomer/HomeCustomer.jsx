@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './HomeCustomer.css'
 import CountUp from 'react-countup'
+import { Element } from 'react-scroll';
 import IMG2 from '../../../images/aboutImg.jpg'
 function HomeCustomer() {
     const countUpStyle = {
@@ -8,8 +9,30 @@ function HomeCustomer() {
         fontWeight: "800",
        
     }
+    useEffect(() => {
+        // Add a scroll listener here to trigger CountUp animations when the section comes into view
+        const handleScroll = () => {
+            const counters = document.querySelectorAll('.counters');
+            const windowBottom = window.scrollY + window.innerHeight;
+
+            counters.forEach((counter) => {
+                const counterTop = counter.offsetTop;
+                if (windowBottom > counterTop) {
+                    // Start CountUp animation
+                    counter.classList.add('counted');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
   return (
-     
+     <Element name='homeCustomer' >
           <div className="customer-container">
               <div className="left">
                   <h1>
@@ -45,7 +68,8 @@ function HomeCustomer() {
           <div className="right">
               <img src={IMG2} alt=''/>
               </div>
-          </div>
+      </div>
+      </Element>
     
   )
 }

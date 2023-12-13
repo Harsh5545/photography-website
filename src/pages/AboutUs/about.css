@@ -2,3 +2,40 @@
     background: black;
     font: optional;
 }
+.about-contaier  {
+    background-image: url('https://res.cloudinary.com/duxc9clvh/image/upload/v1702032749/lifestyle/DSC_2960_ebw4pf.jpg');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;    
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
+  .heading{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.527);
+    animation: fadeIn 2s
+  }
+  .heading h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+  }
+  .heading p{
+    color: #fff;
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -7,17 +7,13 @@
     background-attachment: fixed;
   }
   .container{
-    /* width: 3/4; */
-    padding: 3rem;
+    padding: 1rem;
     position: relative;
-    /* padding: 8rem; */
-    /* gap: 1rem; */
     box-sizing: border-box; 
-    background-color: rgba(0, 0, 0, 0.527);/* Include padding and borders in the width calculation */
-  
+    background-color: rgba(0, 0, 0, 0.527);
   }
 
-  .box{
+.box{
     background-color: var(--secondary);
     height: 30rem;
     color: black;
@@ -27,7 +23,7 @@
     gap: 1rem;
     overflow: hidden;
   }
-  .reviewBox{
+.reviewBox{
     margin: 2rem;
   }
 .reviewimg{

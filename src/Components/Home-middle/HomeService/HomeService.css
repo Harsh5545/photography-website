@@ -17,14 +17,19 @@
     justify-content: center;
     gap: 1rem;
     box-sizing: border-box; 
-    background-color: rgba(0, 0, 0, 0.527);/* Include padding and borders in the width calculation */
+    background-color: rgba(0, 0, 0, 0.527);
   }
   
 
   .services {
     max-width: 25%;
     color: var(--secondary);
-    box-sizing: border-box; /* Include padding and borders in the width calculation */
+    box-sizing: border-box; 
   }
+
+  @media screen and (max-width: 768px){
+    
+  }
+  
   
   
