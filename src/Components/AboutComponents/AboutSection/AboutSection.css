@@ -1,0 +1,39 @@
+.AboutSection {
+    margin: 5rem  8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center; 
+  }
+  
+  .AboutSectionLeft h2 {
+    margin: 1.2rem;
+    font-size: 1.5rem;
+  }
+  .AboutSectionLeft p{
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .AboutSectionRight {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .AboutSectionRight img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .AboutSectionRight img:hover {
+    transform: scale(1.05);
+  }
+
+  .AboutSection.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  

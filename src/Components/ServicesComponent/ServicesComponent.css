@@ -1,0 +1,155 @@
+/* services.css */
+
+.Service-section {
+    background-image: url('https://res.cloudinary.com/duxc9clvh/image/upload/v1702032709/wedding/DSC_6407_ftcyst.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .services-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.527);
+    animation: fadeIn 1s;
+  }
+  
+  .services-intro h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  .services-intro p {
+    width: 80%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .service-offerings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .service-item {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .service-item h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .benefits-section {
+    margin: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .benefits-section h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #333;
+  }
+  
+  .benefits-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .benefits-section li {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .cta-section {
+    background-image: url('https://res.cloudinary.com/duxc9clvh/image/upload/v1702037290/real-estate/DSC_0355_mizbaz.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .cta-container {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.527);
+  }
+  
+  .cta-container h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  .cta-container p {
+    width: 80%;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .cta-container button {
+    margin: 1rem;
+    padding: 1em 2em;
+    font-size: 14px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .service-offerings {
+      flex-direction: column;
+      align-items: center;
+    }
+    .Service-section{
+        height: 60vh;
+    }
+  
+    .service-item {
+      width: 80%;
+    }
+   .services-intro {
+    height:60vh ;
+  }
+    .benefits-section h2 {
+      font-size: 1.2rem;
+    }
+  
+    .cta-container p {
+      width: 100%;
+    }
+  }
+  

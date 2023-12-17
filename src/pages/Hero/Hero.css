@@ -125,6 +125,8 @@
   .slide-Middle {
     gap: 0.5rem;
     height: 50vh;
+    display: flex;
+    justify-content: flex-end;
   }
   .slide h1 {
     font-size: 1.4rem;

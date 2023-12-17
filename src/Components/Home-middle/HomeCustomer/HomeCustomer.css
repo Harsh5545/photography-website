@@ -1,0 +1,81 @@
+/* Common styles */
+.customer-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+.counters {
+    margin: 3rem 0;
+}
+
+.counters h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.counters p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Styles for desktop view */
+.customer-content {
+    display: grid;
+    grid-template-columns: 22rem 22rem;
+    grid-row: auto auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.left {
+    margin: 5rem;
+    text-align: center;
+}
+
+.right img {
+    width: 35rem;
+    height: 40rem;
+}
+
+.plus {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Styles for tablet view */
+@media (max-width: 1024px) {
+    .customer-content {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    }
+
+    .right img {
+        width: 100%; /* Full width for tablet */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Styles for mobile view */
+@media (max-width: 640px) {
+    .customer-content {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .left {
+        margin: 2rem; /* Adjusted margin for mobile */
+    }
+
+    .right{
+        margin: 2rem;
+    }
+    .right img {
+        width: 100%; /* Full width for mobile */
+        height: auto; 
+        /* Maintain aspect ratio */
+    }
+
+    .counters {
+        margin: 2rem 0;
+    }
+}

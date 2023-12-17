@@ -5,16 +5,22 @@ import HomeMiddle from "../../Components/Home-middle/HomeMiddle";
 import HomeService from "../../Components/Home-middle/HomeService/HomeService";
 import HomePortfolio from "../../Components/Home-middle/HomePortfolio/HomePortfolio";
 import HomeReview from "../../Components/Home-middle/HomeReview/HomeReview";
+import HomeCustomer from "../../Components/Home-middle/HomeCustomer/HomeCustomer";
+import HomePhotographer from "../../Components/Home-middle/HomePhotographer/HomePhotographer";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <HomeMiddle />
       <HomeService />
       <HomePortfolio />
       <HomeReview />
+      <HomeCustomer />
+      <HomePhotographer/>
+      <Footer/>
     </div>
   );
 }

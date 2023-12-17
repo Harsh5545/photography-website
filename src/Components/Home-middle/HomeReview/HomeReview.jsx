@@ -98,7 +98,7 @@ function HomeReview() {
     <div className='section'>
       <div className='container'>
         <div className='reviewBox'>
-        <Slider {...settings}>
+        <Slider className='home-review-slider' {...settings}>
           {
             reviewData.map((data) => (
               <div className='box'>

@@ -1,8 +1,12 @@
 import React from 'react'
-
+import PortfolioComponent from '../../Components/PortfolioComponents/PortfolioComponents'
+import Navbar from '../../Components/Navbar'
 function Portfolio() {
   return (
-    <div>Portfolio</div>
+    <div>
+      <Navbar />
+      <PortfolioComponent/>
+    </div>
   )
 }
 

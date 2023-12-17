@@ -29,9 +29,10 @@
 .logo:hover {
   transform: scale(1.1);
 }
+.mobile-menu {
+  display: none;
+}
 .navItem a {
-    
-    
   text-decoration: none;
   /* margin-left: 2rem; */
   padding: 0.5em 0.5em;
@@ -54,11 +55,27 @@ transition: .5s ease;
 }
 /* Navbar.css */
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.628); /* White background with 90% opacity */
+  background-color: rgba(0, 0, 0, 0.744); /* White background with 90% opacity */
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* White shadow with 30% opacity */
   transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
 }
+.mobile-menu.open {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1;
+}
 
+.mobile-menu a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: white;
+}
 
 @media (max-width: 768px) {
   .navContainer {
@@ -74,11 +91,15 @@ transition: .5s ease;
     flex-direction: column;
     background-color: black;
     backface-visibility: inherit;
+    display: none;
   }
 
   .button {
     margin-top: 1rem;
     width: 50%;
+  }
+  .mobile-menu {
+    display: flex;
   }
 }
 
