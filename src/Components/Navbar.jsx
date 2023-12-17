@@ -1,12 +1,12 @@
 // Navbar.js
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import logoImage from '../images/logo4.png';
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(true);
-
+  const navigate=useNavigate()
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 50;
@@ -42,8 +42,8 @@ function Navbar() {
           <Link to="/about" >AboutUs</Link>
           <Link to="/portfolio" >Portfolio</Link>
           <Link to="/services" >Services</Link>
-          <button className="button">
-            <span href='/contact'>ContactUs</span>
+          <button className="button" onClick={()=>navigate("/contact")}>
+            ContactUs
           </button>
         </div>
       </div>

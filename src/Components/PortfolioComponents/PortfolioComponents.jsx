@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Image, Transformation } from 'cloudinary-react';
+// import { Image, Transformation } from 'cloudinary-react';
 import Masonry from 'react-masonry-css';
 import './PortfolioComponents.css';
 import Navbar from '../Navbar';
@@ -16,22 +16,23 @@ const breakpointColumnsObj = {
 const allPhotos = Object.values(PhotoData).flat();
 
 function PortfolioComponent() {
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [category, setCategory] = useState('all');
   const [imagePublicIds, setImagePublicIds] = useState([]);
 
+  
   useEffect(() => {
     const selectedCategory = category === 'all' ? allPhotos : PhotoData[category];
     setImagePublicIds(selectedCategory.map((photo) => photo.path));
   }, [category]);
 
+  
   const handleCategoryChange = (newCategory) => {
     setCategory(newCategory);
   };
 
   return (
     <div className="portfolio-section">
-    
-      <h1>Portfolio</h1>
       <div className="categories">
         <button onClick={() => handleCategoryChange('all')}>All</button>
         <button onClick={() => handleCategoryChange('wedding')}>Wedding</button>
@@ -39,16 +40,20 @@ function PortfolioComponent() {
         <button onClick={() => handleCategoryChange('lifestyle')}>Lifestyle</button>
         <button onClick={() => handleCategoryChange('realestate')}>Real Estate</button>
       </div>
+    
+     
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
+        
       >
         {imagePublicIds.map((path, index) => (
           <img key={index} src={path} alt={`Photo ${index + 1}`} />
         ))}
-      </Masonry>
-      <Footer />
+        </Masonry>
+        
+    
     </div>
   );
 }

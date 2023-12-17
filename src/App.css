@@ -46,6 +46,22 @@ a {
   width: 100%;
 }
 
+/* .App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.loader-Image{
+  width: auto;
+  height: auto;
+  
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
 .flexCenter {
   display: flex;
   row-gap: 2rem;

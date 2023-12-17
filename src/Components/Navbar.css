@@ -76,7 +76,21 @@ transition: .5s ease;
   text-decoration: none;
   color: white;
 }
-
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+ }
+ 
+ .back-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+ } 
 @media (max-width: 768px) {
   .navContainer {
     flex-direction: column;
