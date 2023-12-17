@@ -4,7 +4,7 @@ function HomePhotographer() {
   return (
       <div className='PhotoContainer'>
           <div className="photoContact">
-          <span>Contact</span>
+          
               <h2>Looking for a photograher /</h2><h2> videographer?</h2>
           <p> Your search ends here! Our skilled team is ready to turn your memories into timeless masterpieces. Get in touch with us today!</p>
           <div className="getInTouchButton">
