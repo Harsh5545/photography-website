@@ -11,9 +11,7 @@ function Portfolio() {
       setShow(false)
     },
       1000
-    
     )
-
   }, [])
   return (
     <div>
@@ -22,10 +20,8 @@ function Portfolio() {
         <div className='portfolio-content'>
         <h1>Portfolio</h1>
           <p>Featured Photo Shoots</p>
-          </div>
-
+        </div>
       </div>
-
       {
         show?<Loader/>:
         <PortfolioComponent />}

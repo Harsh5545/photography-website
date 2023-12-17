@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       {isLoading ? (
-          <div className="loader-container">
+        <div className="loader-container">
           <img className="loader-Image" src={loader} alt="Loader" />
         </div>
       ) : (

@@ -45,7 +45,7 @@ function AboutSection() {
       </div>
       <div className='AboutSectionRight'>
         <img
-          style={{ height: '25rem' }}
+          // style={{ height: '25rem' }}
           src='https://res.cloudinary.com/duxc9clvh/image/upload/v1702036176/Portrait/DSC_9414_1_heggh0.jpg'
           alt='portrait'
         />

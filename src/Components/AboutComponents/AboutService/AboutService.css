@@ -9,16 +9,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
-  
-    /* Responsive styles for smaller screens */
-    @media screen and (max-width: 768px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .aboutService{
-        border: none;
-        outline: none;
-    }
   }
   .AboutContainer{
     padding: 20px;
@@ -35,7 +25,6 @@
     align-items: flex-start;
     text-align: left;
   
-  
     h2 {
       margin-top: 10px;
       font-size: 1.2em;
@@ -49,4 +38,17 @@
   }
   
   /* Additional styles as needed */
-  
+@media screen and (max-width:768px) {
+  .AboutContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width:480px) {
+  .AboutContent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+} 
