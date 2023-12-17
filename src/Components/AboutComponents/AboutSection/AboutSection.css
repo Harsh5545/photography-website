@@ -1,8 +1,8 @@
 .AboutSection {
-    margin: 5rem  8rem;
+    margin: 5rem  11rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap:2rem;
     align-items: center; 
   }
   
@@ -36,4 +36,21 @@
     transform: translateY(20px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
-  
+  @media (min-width:481px) and (max-width:768px)  {
+    .AboutSection{
+      margin: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .AboutSectionRight img{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:480px) {
+    .AboutSection{
+      margin: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .AboutSectionRight img{
+      width: 100%;
+    }
+  }
