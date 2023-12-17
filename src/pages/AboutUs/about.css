@@ -13,6 +13,7 @@
     
   }
   .heading{
+    /* margin-top: 2rem; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -24,6 +25,7 @@
     animation: fadeIn 2s
   }
   .heading h1{
+  
     font-size: 4rem;
     font-weight: 800;
     color: #fff;
@@ -35,6 +37,13 @@
     .about-contaier, .heading{
       height: 60vh;
     } 
+    .about-contaier{
+      background-image: url('https://res.cloudinary.com/duxc9clvh/image/upload/v1702032362/lifestyle/DSC_0378_gikjqp.jpg');
+      background-size: cover;
+    }
+    /* .heading{
+      align-items: center;
+    } */
   }
 
 

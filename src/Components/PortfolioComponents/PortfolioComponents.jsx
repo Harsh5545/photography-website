@@ -56,6 +56,7 @@ function PortfolioComponent() {
         <button onClick={() => handleCategoryChange('fashion')}>Fashion</button>
         <button onClick={() => handleCategoryChange('lifestyle')}>Lifestyle</button>
         <button onClick={() => handleCategoryChange('realestate')}>Real Estate</button>
+        <button onClick={() => handleCategoryChange('ecommerce')}>E-commerce</button>
 </div>
     
      

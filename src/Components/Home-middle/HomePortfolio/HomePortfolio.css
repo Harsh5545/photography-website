@@ -1,7 +1,42 @@
 .portfolio{
+margin: 5rem;
 
-    margin: 5rem;
 }
+.portfolio-content-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.portfolio-content-btn h4{
+    color: rgb(255, 111, 0);
+    font-size: 1.5rem;
+}
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  .btn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 20px;
+    background-image: var(--orange-gradient);
+    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .btn:active {
+    opacity: 0.5;
+  }
 /*  */
 @media (max-width: 640px){
     .portfolio{

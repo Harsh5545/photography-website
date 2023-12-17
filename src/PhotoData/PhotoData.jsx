@@ -811,7 +811,10 @@ const PhotoData = {
           alt: 'Picturesque backyard retreat with lush greenery and tranquil ambiance',
           description: 'Escape to a picturesque backyard retreat, surrounded by lush greenery and a tranquil ambiance that creates a perfect outdoor haven.',
         },
-      ],
+  ],
+  ecommerce: [
+   
+    ]
 };
 
 export default PhotoData;

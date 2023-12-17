@@ -58,9 +58,12 @@
     return (
       <>
         <div className='portfolio'>
-          <h4>Portfolio</h4>
-          <div><h1>Selected Work</h1></div>
-
+          <div className="portfolio-content-btn">
+          <div><h4>Portfolio</h4>
+          <h1>Selected Work</h1></div>
+          <button className='btn'>
+              View All Work    </button>
+              </div>
           {/* <div className="home-photos-container">
             {homePhotos.map((photo, index) => (
               <Link key={index} to={`/category/${photo.url}`} className="home-photo">

@@ -36,31 +36,31 @@ function HomeCustomer() {
           <div className="customer-container">
               <div className="left">
                   <h1>
-                  Nurtured to perfection
+                  Nurtured to Perfection
                   </h1>
               <div className="customer-content">
               <span className='counters'>
                       <CountUp style={ countUpStyle}  start={20} end={55} duration={6} />
                   <span className='plus'>+</span>
-                  <h1>CITIES TRAVELLED</h1>
+                  <h2>CITIES TRAVELLED</h2>
                   <p>Spread across the globe.</p>
                   </span>
                   <span className='counters'>
                       <CountUp style={ countUpStyle}  start={300} end={500} duration={6} />
                   <span className='plus'>+</span>
-                  <h1>HAPPY COUPLES</h1>
+                  <h2>HAPPY COUPLES</h2>
                   <p>Hailing from varied cultures, regions and religions.</p>
                   </span>
                   <span className='counters'>
                       <CountUp style={ countUpStyle}  start={50000} end={100000} duration={6} />
                   <span className='plus'>+</span>
-                  <h1>PHOTOS DELIVERED</h1>
+                  <h2>PHOTOS DELIVERED</h2>
                   <p>Edited pictures of life defining moments.</p>
                   </span>
                   <span className='counters'>
                       <CountUp style={ countUpStyle} start={100} end={200} duration={6} />
                   <span className='plus'>+</span>
-                  <h1>VIDEOS PRODUCED</h1>
+                  <h2>VIDEOS PRODUCED</h2>
                   <p>Edited videos that are a real tribute to love and companionship.</p>
                   </span>
                 </div>

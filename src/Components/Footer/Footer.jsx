@@ -82,7 +82,7 @@ function Footer() {
                       </span>
                       <span>
                           <RoofingRoundedIcon />
-                          Thane
+                          Kalyan
               </span>
               <span>
                           <RoofingRoundedIcon />
