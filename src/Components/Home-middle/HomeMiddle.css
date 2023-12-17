@@ -1,11 +1,12 @@
 /* HomeMiddle.css */
 .middle {
-    margin: 3rem 5rem;
+    /* margin: 3rem 5rem; */
     position: relative;
     
   }
   
   .middleSection {
+    margin: 4rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +34,7 @@
     position: relative;
   }
   .rightAbout h4{
+    margin-top: 1rem;
     margin-bottom: 2.5rem;
     color: #DE4D38;
     font-size: 1.6rem;

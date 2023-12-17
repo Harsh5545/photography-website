@@ -71,3 +71,9 @@
   .contact-left img:hover {
     transform: scale(1.05);
   }
+  @media (max-width: 768px){
+    .contact-fullcontainer{
+        margin: 1rem;
+        flex-direction: column;
+    }
+  }
