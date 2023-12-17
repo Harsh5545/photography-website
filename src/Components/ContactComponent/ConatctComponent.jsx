@@ -7,7 +7,7 @@ function ConatctComponent() {
             <div className='Contcat-right'>
                 
                 <form className="contact-us-form">
-                    <h1>We're Ready to Work with You. Get in Touch</h1>
+                    <h1>We're Ready to Work with You.<br/> Get in Touch</h1>
     <label htmlFor="name">Name</label>
     <input type="text" id="name" name="name" required />
 

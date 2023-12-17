@@ -14,7 +14,7 @@
   
 
   .photoContact{
-    margin: 4rem;
+  
     padding: 5rem;
     display: flex;
     position: relative;
@@ -92,5 +92,11 @@
   }
 
   @media (max-width: 768px){
-    
+    .photoContact h2{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .photoContact p{
+      font-size: 0.8rem;
+    }
   }

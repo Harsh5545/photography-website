@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../Components/Navbar'
 import './ContactUs.css'
 import ConatctComponent from '../../Components/ContactComponent/ConatctComponent'
+import Footer from '../../Components/Footer/Footer'
 function ContactUs() {
   return (
     <div>
@@ -13,7 +14,8 @@ function ContactUs() {
           </div>
 
       </div>
-      <ConatctComponent/>
+      <ConatctComponent />
+      <Footer/>
     </div>
   )
 }

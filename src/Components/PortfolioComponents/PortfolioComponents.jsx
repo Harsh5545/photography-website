@@ -33,13 +33,30 @@ function PortfolioComponent() {
 
   return (
     <div className="portfolio-section">
+      
       <div className="categories">
+        <h3>Select Catgory:</h3>
+      <div className="portfolio-container">
+ <svg className="icon" viewBox="0 0 100 100">
+    <path d="M60.7,53.6,50,64.3m0,0L39.3,53.6M50,64.3V35.7m0,46.4A32.1,32.1,0,1,1,82.1,50,32.1,32.1,0,0,1,50,82.1Z" class="svg-stroke"></path>
+ </svg>
+ <select className="select" onChange={(e)=> handleCategoryChange(e.target.value)}>
+   
+ <option value="all">All</option>
+ <option value="wedding">Wedding</option>
+        <option value="fashion">Fashion</option>
+        <option value="lifestyle">Lifestyle</option>
+        <option value="realestate">Real Estate</option>
+        </select>
+</div>
+      </div>
+      <div className="categories1">
         <button onClick={() => handleCategoryChange('all')}>All</button>
         <button onClick={() => handleCategoryChange('wedding')}>Wedding</button>
         <button onClick={() => handleCategoryChange('fashion')}>Fashion</button>
         <button onClick={() => handleCategoryChange('lifestyle')}>Lifestyle</button>
         <button onClick={() => handleCategoryChange('realestate')}>Real Estate</button>
-      </div>
+</div>
     
      
       <Masonry

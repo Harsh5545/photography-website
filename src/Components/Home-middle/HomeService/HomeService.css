@@ -28,12 +28,20 @@
   }
 
   @media screen and (max-width: 768px){
+    .services h2{
+      font-size: 1rem;
+    }
+    .services p{
+      font-size: 0.8rem;
+    }
     .content{
       padding: 2.5rem;
    display: grid;
     grid-template-columns: 2fr 2fr;
     grid-row: auto auto;
-    gap: 2rem;  }
+    gap: 2rem; 
+   }
+
     .services{
       max-width: 100%;
     }
