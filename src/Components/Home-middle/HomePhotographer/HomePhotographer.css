@@ -17,6 +17,9 @@
     margin: 4rem;
     padding: 5rem;
     display: flex;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.527);
+    animation: fadeIn 1s;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -25,10 +28,14 @@
     margin-bottom: 1.5rem;
     font-weight:700 ;
   }
+  .photoContact h2{
+    color: #fff;
+  }
   .photoContact p{
     margin-bottom: 1.5rem;
     font-weight: 500;
     margin-top: 1.5rem;
+    color: #fff;
   }
   .cssbuttons-io-button {
     background: var(--orange-gradient);

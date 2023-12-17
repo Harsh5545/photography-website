@@ -1,5 +1,5 @@
 .portfolio-sections{
-    background-image: url('https://res.cloudinary.com/duxc9clvh/image/upload/v1702032709/wedding/DSC_6407_ftcyst.jpg');
+    background-image: url('https://res.cloudinary.com/duxc9clvh/image/upload/v1702032704/lifestyle/DSC_7146_puyjj1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -20,6 +20,17 @@
     animation: fadeIn 1s;
 }
 .portfolio-content h1{
-    font-size: 5rem;
-
+    font-size: 2.5rem;
+}
+@media (max-width: 768px) {
+    .portfolio-content h1{
+        font-size: 1rem;
+    }
+.portfolio-sections, .portfolio-content{
+    height: 60vh;
+    background-size: cover;
+}
+.portfolio-sections{
+    background-image: url('https://res.cloudinary.com/duxc9clvh/image/upload/v1702032666/lifestyle/DSC_9036_gbkw1c.jpg');
+}
 }

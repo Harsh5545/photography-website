@@ -12,14 +12,14 @@
   
   .services-intro {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(0, 0, 0, 0.744);
     animation: fadeIn 1s;
   }
   
@@ -137,7 +137,6 @@
     .Service-section{
         height: 60vh;
     }
-  
     .service-item {
       width: 80%;
     }
@@ -147,9 +146,18 @@
     .benefits-section h2 {
       font-size: 1.2rem;
     }
+    .services-intro h1{
+      margin: 1rem
+    }
+    .services-intro p{
+      font-size: 0.8rem;
+    }
   
     .cta-container p {
       width: 100%;
     }
+.Service-section {
+  height: 60vh;
+}
   }
   

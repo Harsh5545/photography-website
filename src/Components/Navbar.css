@@ -101,7 +101,6 @@ transition: .5s ease;
 @media (max-width: 768px) {
   .navContainer {
     flex-direction: column;
-    /* padding: 2rem; */
   }
   .navContainer .toggleNavbar {
     transform: none;

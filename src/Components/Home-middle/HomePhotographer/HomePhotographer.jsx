@@ -1,6 +1,8 @@
 import React from 'react'
 import './HomePhotographer.css'
+import { useNavigate } from 'react-router-dom'
 function HomePhotographer() {
+  const navigate=useNavigate()
   return (
       <div className='PhotoContainer'>
           <div className="photoContact">
@@ -8,7 +10,7 @@ function HomePhotographer() {
               <h2>Looking for a photograher /</h2><h2> videographer?</h2>
           <p> Your search ends here! Our skilled team is ready to turn your memories into timeless masterpieces. Get in touch with us today!</p>
           <div className="getInTouchButton">
-          <button className="cssbuttons-io-button">
+          <button className="cssbuttons-io-button" onClick={()=>navigate("/contact")}>
 Get in Touch  <div className="icon">
     <svg
       height="24"

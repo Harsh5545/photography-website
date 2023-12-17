@@ -7,7 +7,7 @@ function ConatctComponent() {
             <div className='Contcat-right'>
                 
                 <form className="contact-us-form">
-                    <h1>Contact Us</h1>
+                    <h1>We're Ready to Work with You. Get in Touch</h1>
     <label htmlFor="name">Name</label>
     <input type="text" id="name" name="name" required />
 
@@ -24,7 +24,7 @@ function ConatctComponent() {
            
         <img
           style={{ height: '25rem' }}
-          src='https://res.cloudinary.com/duxc9clvh/image/upload/v1702036176/Portrait/DSC_9414_1_heggh0.jpg'
+          src='https://res.cloudinary.com/duxc9clvh/image/upload/v1702036180/Portrait/DSC_9477_2_bfenvz.jpg'
           alt='portrait'
         />
           
