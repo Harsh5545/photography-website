@@ -1,6 +1,5 @@
 import React from 'react'
 import './ConatctComponent.css'
-import { Carousel } from 'react-responsive-carousel';
 function ConatctComponent() {
 
     return (
