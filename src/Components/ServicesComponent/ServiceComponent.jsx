@@ -2,9 +2,10 @@ import React from 'react';
 import Footer from '../../Components/Footer/Footer';
 import Navbar from '../Navbar'
 import './ServicesComponent.css'; // Add your styling for the services page
+import { useNavigate } from 'react-router-dom';
 
 function ServiceComponent() {
-
+  const navigate=useNavigate()
   return (
       <>
           <div className='Service-section'>
@@ -63,7 +64,7 @@ function ServiceComponent() {
                       <div className='cta-container'>
           <h2>Ready to Capture Your Moments?</h2>
           <p>Contact us to discuss your photography and videography needs. We look forward to creating lasting memories and impactful visuals with you.</p>
-         <button className='button'>Get In Touch</button>
+         <button  className='button' onClick={()=>navigate("/contact")}>Get In Touch</button>
           </div>
                           {/* Add a CTA button or contact form */}
         </section>
