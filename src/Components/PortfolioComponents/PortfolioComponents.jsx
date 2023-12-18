@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 // import { Image, Transformation } from 'cloudinary-react';
 import Masonry from 'react-masonry-css';
 import './PortfolioComponents.css';
-import Navbar from '../Navbar';
-import Footer from '../../Components/Footer/Footer';
 import PhotoData from '../../PhotoData/PhotoData';
 
 const breakpointColumnsObj = {
@@ -16,7 +14,7 @@ const breakpointColumnsObj = {
 const allPhotos = Object.values(PhotoData).flat();
 
 function PortfolioComponent() {
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+ 
   const [category, setCategory] = useState('all');
   const [imagePublicIds, setImagePublicIds] = useState([]);
 
@@ -38,7 +36,7 @@ function PortfolioComponent() {
         <h3>Select Catgory:</h3>
       <div className="portfolio-container">
  <svg className="icon" viewBox="0 0 100 100">
-    <path d="M60.7,53.6,50,64.3m0,0L39.3,53.6M50,64.3V35.7m0,46.4A32.1,32.1,0,1,1,82.1,50,32.1,32.1,0,0,1,50,82.1Z" class="svg-stroke"></path>
+    <path d="M60.7,53.6,50,64.3m0,0L39.3,53.6M50,64.3V35.7m0,46.4A32.1,32.1,0,1,1,82.1,50,32.1,32.1,0,0,1,50,82.1Z" className="svg-stroke"></path>
  </svg>
  <select className="select" onChange={(e)=> handleCategoryChange(e.target.value)}>
    

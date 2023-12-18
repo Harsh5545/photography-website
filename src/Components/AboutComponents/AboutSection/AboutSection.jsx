@@ -1,22 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './AboutSection.css';
 
 function AboutSection() {
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const aboutSection = document.querySelector('.AboutSection');
-//       const scrollY = window.scrollY;
 
-//       if (scrollY > aboutSection.offsetTop - window.innerHeight / 2) {
-//         aboutSection.classList.add('scroll-animation');
-//       }
-//     };
-
-//     window.addEventListener('scroll', handleScroll);
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
 
   return (
     <div className='AboutSection'>
@@ -45,7 +31,7 @@ function AboutSection() {
       </div>
       <div className='AboutSectionRight'>
         <img
-          // style={{ height: '25rem' }}
+        
           src='https://res.cloudinary.com/duxc9clvh/image/upload/v1702036176/Portrait/DSC_9414_1_heggh0.jpg'
           alt='portrait'
         />

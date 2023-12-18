@@ -15,11 +15,11 @@ const MasonryPortfolio = ({ photos }) => {
       className="masonry-grid"
       columnClassName="masonry-grid-column"
     >
-      {photos.map((photo, index) => (
+      {photos.map((capture, index) => (
         <div key={index} className="masonry-grid-item">
-          <img loading='lazy' src={photo.url} alt={`Photo ${index}`} />
-          <a class="cursor-eye" href="gallery-masonry-4-cols.html"> </a>
-          <p className='text-overlay'>{photo.text}</p>
+          <img loading='lazy' src={capture.url} alt={`capture ${index}`} />
+          <a className="cursor-eye" href="gallery-masonry-4-cols.html"> </a>
+          <p className='text-overlay'>{capture.text}</p>
         </div>
       ))}
     </Masonry>

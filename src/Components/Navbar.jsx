@@ -61,7 +61,7 @@ function Navbar() {
         </nav>
         <div>
           <button className="btn-menu" onClick={toggleNavbar}>
-            <span class="material-symbols-outlined"><MenuIcon/></span>
+            <span className="material-symbols-outlined"><MenuIcon/></span>
           </button>
         </div>
         </div>
