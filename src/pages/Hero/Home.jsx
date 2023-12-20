@@ -1,10 +1,8 @@
 
-import React, { useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState} from 'react';
 import { Carousel } from 'antd';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
-
-
 import './Hero.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -19,10 +17,25 @@ const Hero = () => {
   const handlePrevSlide = () => {
     ref.current.prev()
   };
-  const navigate=useNavigate()
+  const navigate = useNavigate()
+
+  const autoAdvanceSlide = useCallback(() => {
+    const nextSlide = (currentSlide + 1) % 3; // Assuming you have 3 slides
+    setCurrentSlide(nextSlide);
+    ref.current.goTo(nextSlide);
+  }, [currentSlide]);
+
+  useEffect(() => {
+    // Set a timer to automatically advance the slide every 5 seconds (adjust as needed)
+    const timer = setTimeout(autoAdvanceSlide, 5000);
+
+    // Clear the timer when the component unmounts or when the currentSlide changes
+    return () => clearTimeout(timer);
+  }, [autoAdvanceSlide]);
+
   return (
     <div className="home">
-      {/* <Navbar /> */}
+    
       <Carousel
         
         effect="fade"

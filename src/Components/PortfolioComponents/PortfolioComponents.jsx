@@ -21,7 +21,7 @@ function PortfolioComponent() {
   
   useEffect(() => {
     const selectedCategory = category === 'all' ? allPhotos : PhotoData[category];
-    setImagePublicIds(selectedCategory.map((photo) => photo.path));
+    setImagePublicIds(selectedCategory.map((x) => x.path));
   }, [category]);
 
   
@@ -65,7 +65,7 @@ function PortfolioComponent() {
         
       >
         {imagePublicIds.map((path, index) => (
-          <img loading='lazy' key={index} src={path} alt={`Photo ${index + 1}`} />
+          <img loading='lazy' key={index} src={path} alt={`x ${index + 1}`} />
         ))}
         </Masonry>
         
