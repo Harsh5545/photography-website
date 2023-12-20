@@ -134,8 +134,8 @@ transition: .5s ease;
   }
   .navContainer{
     display: flex;
-    justify-content: start;
-    align-items: start;
+    /* justify-content: start; */
+    /* align-items: start; */
   }
 
 }

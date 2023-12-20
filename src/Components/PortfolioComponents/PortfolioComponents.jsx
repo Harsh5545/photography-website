@@ -65,7 +65,7 @@ function PortfolioComponent() {
         
       >
         {imagePublicIds.map((path, index) => (
-          <img key={index} src={path} alt={`Photo ${index + 1}`} />
+          <img loading='lazy' key={index} src={path} alt={`Photo ${index + 1}`} />
         ))}
         </Masonry>
         
