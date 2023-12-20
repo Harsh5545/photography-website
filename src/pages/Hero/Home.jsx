@@ -1,10 +1,9 @@
-// Home.js
+
 import React, { useRef, useState } from 'react';
 import { Carousel } from 'antd';
-// import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons'; // Import arrow icons
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
-// Make sure to replace with the correct path
+
 
 import './Hero.css';
 import { useNavigate } from 'react-router-dom';

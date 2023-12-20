@@ -8,8 +8,6 @@ function ConatctComponent() {
 
  const sendEmail = (e) => {
     e.preventDefault();
-
-    // Replace with your actual EmailJS service ID, template ID, and public key
     const serviceId = 'service_gmre1gr';
     const templateId = 'template_ijqtu8v';
     const publicKey = 'Lwa5WZvrG1rdoAJnH';
