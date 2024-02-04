@@ -17,7 +17,6 @@ function AboutUs() {
       <AboutService />
       <AboutSection />  
       <Footer/>
-      <h1>Hello </h1>
     </>
   )
 }
