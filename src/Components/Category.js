@@ -7,9 +7,9 @@ const Category = () => {
 
   return (
     <div>
-      <h2>{category.toUpperCase()} Photos</h2>
+      <h2>{category.toUpperCase()} Photos </h2>
       {/* Display photos here */}
-    </div>
+    </div> 
   );
 };
 
